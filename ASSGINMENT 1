@@ -1,1 +1,25 @@
 
+students = {
+    101: ["Rohit", "Computer Science", (86, 90, 81)],
+    102: ["NIhar", "ECE", (78, 82, 89)]
+}
+
+print("Initital Students:")
+print(students)
+
+students[103] = ["Rahul", "Mechanical", (70, 75, 72)]
+
+print("After Adding Roll 103:")
+print(students)
+
+del students[102]
+
+print("\n After Deleting Roll 102:")
+print(students)
+
+students[101] = ["Aarav", "Data Science", (90, 95, 92)]
+
+print("\n After Updating Roll 101:")
+print(students)
+print("\nFinal Updated Version")
+print(students)
