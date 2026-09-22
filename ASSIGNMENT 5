@@ -1,1 +1,19 @@
 
+def pan_validation(pan):
+    if len(pan) == 10:
+        five1 = pan[0:5]
+        four2 = pan[5:9]
+        one3 = pan[9]
+        
+        condition1 = five1.isalpha() and five1.isupper()
+        condition2 = four2.isdigit()
+        condition3 = one3.isalpha() and one3.isupper()
+
+        if condition1 and condition2 and condition3:
+            print("Valid PAN number")
+        else:
+            print("Invalid PAN number")
+    else:
+        print("Incorrect PAN length")
+inpu=input("Enter your PAN number:")
+pan_validation(inpu)
