@@ -1,1 +1,16 @@
 
+def pythaguras(a,b,c):
+
+  length = [a,b,c]
+  length.sort()
+
+  if length[0]**2 + length[1]**2 == length[2]**2:
+    print("It is a right angle triangle")
+  else:
+    print("It is not a right angle triangle")
+
+side0=int(input("Enter the length of the first side of the triangle:"))
+side1=int(input("Enter the length of the second side of the triangle:"))
+side2=int(input("Enter the length of the third side of the triangle:"))
+
+pythaguras(side0,side1,side2)
