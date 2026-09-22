@@ -1,1 +1,10 @@
+import numpy as np 
+arr=np.arange(1,26)
+matrix1=arr.reshape(5,5)
 
+arru=np.array([[1,67,69,42,87], [19,13,17,16,15],[25,27,29,30,150],[11,10,91,99,89],[21,0,39,40,49]]) 
+matrix2=arru.reshape(5,5)
+
+sum=matrix1+matrix2
+
+print(sum)
